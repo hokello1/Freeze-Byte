@@ -1,0 +1,20 @@
+<h1>Hello World</h1>
+
+<p>This is my first webpage</p>
+
+<P>My First name is {{first_name}}</P>
+
+<p> {{stuff|safe}}</p>
+<h3>Favorite Cars:</h3>
+
+{% for car in favorite_cars%}
+    {% if car == 100 %}
+        {{car + 100}} <br><br>
+        {% else %}
+        {{car}}</br>
+    {%endif %}
+
+{% endfor %}
+
+<br><br>
+{{ favorite_cars.0}}
